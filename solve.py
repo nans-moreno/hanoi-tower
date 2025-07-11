@@ -8,18 +8,7 @@ import sys
 from typing import List, Tuple
 
 
-def hanoi_recursive(n: int, source: int, destination: int, auxiliary: int, moves: List[str], verbose: bool = True) -> None:
-    """
-    Résout récursivement le problème de la Tour de Hanoï
-    
-    Args:
-        n: Nombre de disques à déplacer
-        source: Numéro du bâtonnet source (1-indexé)
-        destination: Numéro du bâtonnet destination (1-indexé)
-        auxiliary: Numéro du bâtonnet auxiliaire (1-indexé)
-        moves: Liste pour stocker les mouvements
-        verbose: Si True, affiche les mouvements
-    """
+def hanoi_recursive(n: int, source: int, destination: int, auxiliary: int, moves: List[str], verbose: bool = True) -> None: 
     if n == 1:
         move = f"{source}->{destination}"
         moves.append(move)
